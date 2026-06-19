@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="language" content="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark">
+    <meta name="theme-color" content="#120b24">
+    <meta name="description" content="AutoHide Cursor is a lightweight Windows tray app that automatically hides the mouse cursor after inactivity, with a configurable timeout, custom tray icon, and auto-start. No admin required.">
+    <meta name="author" content="emp0ry">
+    <meta name="application-name" content="AutoHide Cursor">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <meta name="keywords" content="AutoHide Cursor, hide cursor, hide mouse, Windows tray app, cursor, mouse, Windows 10, Windows 11, emp0ry">
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self';
+        script-src 'self';
+        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        img-src 'self' data:;
+        connect-src 'self';
+        upgrade-insecure-requests;
+    ">
+    <title>AutoHide Cursor | Hide the mouse cursor after inactivity</title>
+    <link rel="icon" href="img/icon.ico" sizes="any">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;family=Sora:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="AutoHide Cursor">
+    <meta property="og:title" content="AutoHide Cursor | Hide the mouse cursor after inactivity">
+    <meta property="og:description" content="A lightweight Windows tray app that automatically hides the cursor after inactivity. Configurable timeout, no admin required.">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+  </head>
+  <body data-page="home">
+    <div class="backdrop"></div>
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="#top" aria-label="AutoHide Cursor home">
+          <span class="brand-copy">
+            <strong>AutoHide Cursor</strong>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="Primary">
+          <a href="#features">Features</a>
+          <a href="#usage">Usage</a>
+          <a href="#requirements">Requirements</a>
+          <a
+            class="button button-ghost"
+            href="https://github.com/emp0ry/AutoHideCursor"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub
+          </a>
+          <a class="button button-secondary nav-home" href="https://emp0ry.com">Hub</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section" id="top">
+        <div class="container">
+          <div class="hero-copy hero-centered reveal">
+            <div class="eyebrow">
+              <span class="eyebrow-dot"></span>
+              Windows tray app · Auto-hide cursor · No admin required
+            </div>
+            <h1>Hide the cursor. Keep the focus.</h1>
+            <p class="hero-text">
+              AutoHide Cursor is a lightweight Windows tray app that automatically hides the mouse
+              cursor after inactivity. Set a custom timeout, toggle it from the tray, change the tray
+              icon, and control auto-start, all running as a standard user with no admin needed.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="https://github.com/emp0ry/AutoHideCursor" target="_blank" rel="noreferrer">
+                View on GitHub
+              </a>
+              <a class="button button-secondary" href="#features">Explore features</a>
+              <a class="button button-secondary button-accent" href="https://emp0ry.com">Back to Hub</a>
+            </div>
+            <div class="hero-metrics">
+              <div class="metric-card">
+                <strong>Auto-hide</strong>
+                <span>Cursor disappears after inactivity (default 10s)</span>
+              </div>
+              <div class="metric-card">
+                <strong>Configurable</strong>
+                <span>Cycle 3 / 5 / 10 / 30 / 60 seconds from the tray</span>
+              </div>
+              <div class="metric-card">
+                <strong>System-wide</strong>
+                <span>Works across apps, full-screen, and desktops</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="features">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="section-kicker">Features</span>
+            <h2>Out of sight, until you move.</h2>
+            <p>
+              A standard Windows low-level mouse hook and system cursor swap keep the cursor hidden
+              while you read, watch, or present, then bring it right back the moment you move.
+            </p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card reveal">
+              <div class="feature-icon icon-orbit"></div>
+              <h3>Auto-hide cursor</h3>
+              <p>The cursor disappears automatically after a period of inactivity (10s by default).</p>
+            </article>
+            <article class="feature-card reveal reveal-delay-sm">
+              <div class="feature-icon icon-sun"></div>
+              <h3>Configurable timeout</h3>
+              <p>Cycle between 3, 5, 10, 30, and 60 seconds straight from the tray menu.</p>
+            </article>
+            <article class="feature-card reveal reveal-delay-md">
+              <div class="feature-icon icon-play"></div>
+              <h3>Quick toggle</h3>
+              <p>Left-click the tray icon to enable or disable auto-hide globally.</p>
+            </article>
+            <article class="feature-card reveal">
+              <div class="feature-icon icon-grid"></div>
+              <h3>Custom tray icon</h3>
+              <p>Load any <code>.ico</code>; the default icon auto-adapts to taskbar light/dark mode.</p>
+            </article>
+            <article class="feature-card reveal reveal-delay-sm">
+              <div class="feature-icon icon-wave"></div>
+              <h3>Persistent &amp; auto-update</h3>
+              <p>Timeout, enabled state, and custom icon are restored on launch; updates are checked on start.</p>
+            </article>
+            <article class="feature-card reveal reveal-delay-md">
+              <div class="feature-icon icon-lock"></div>
+              <h3>Run at startup</h3>
+              <p>Enable or disable auto-start from the tray menu (HKCU only), no admin required.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section experience" id="usage">
+        <div class="container split-layout">
+          <div class="section-head reveal">
+            <span class="section-kicker">Usage</span>
+            <h2>Everything from the tray.</h2>
+            <p>
+              Launch <code>AutoHideCursor.exe</code> and it appears as an icon in the notification area.
+              Left-click toggles it; right-click opens the menu.
+            </p>
+          </div>
+
+          <div class="steps-card reveal reveal-delay">
+            <article class="step-row">
+              <span class="step-index">01</span>
+              <div>
+                <h3>Enable or disable</h3>
+                <p>Left-click the tray icon to toggle AutoHide Cursor on or off.</p>
+              </div>
+            </article>
+            <article class="step-row">
+              <span class="step-index">02</span>
+              <div>
+                <h3>Change the timeout</h3>
+                <p>Right-click → <strong>Timeout: Xs</strong> to cycle through 3s → 5s → 10s → 30s → 60s.</p>
+              </div>
+            </article>
+            <article class="step-row">
+              <span class="step-index">03</span>
+              <div>
+                <h3>Personalize</h3>
+                <p>Right-click → <strong>Run at Startup</strong>, <strong>Change Icon</strong> / <strong>Reset Icon</strong>, or <strong>About</strong>.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section responsibility" id="requirements">
+        <div class="container">
+          <div class="responsibility-shell reveal">
+            <div class="section-head">
+              <span class="section-kicker">Requirements</span>
+              <h2>Standard APIs, no elevation.</h2>
+              <p>
+                AutoHide Cursor uses only standard Windows APIs (a low-level mouse hook and a system
+                cursor swap) and runs entirely as a standard user.
+              </p>
+            </div>
+
+            <div class="legal-grid">
+              <article class="legal-card">
+                <h3>Windows 10 &amp; 11</h3>
+                <p>Windows 10 22H2 or Windows 11 23H2/24H2 (and newer).</p>
+              </article>
+              <article class="legal-card">
+                <h3>No admin</h3>
+                <p>No administrator privileges required to install or run.</p>
+              </article>
+              <article class="legal-card">
+                <h3>Install &amp; run</h3>
+                <p>Download from Releases, extract if zipped, and launch <code>AutoHideCursor.exe</code>.</p>
+              </article>
+              <article class="legal-card">
+                <h3>Uninstall</h3>
+                <p>Exit from the tray and delete the files. Turn off Run at Startup first if enabled.</p>
+              </article>
+            </div>
+
+            <div class="responsibility-actions">
+              <a class="button button-secondary button-accent" href="https://github.com/emp0ry/AutoHideCursor" target="_blank" rel="noreferrer">View on GitHub</a>
+              <a class="button button-secondary" href="https://github.com/emp0ry/AutoHideCursor/releases" target="_blank" rel="noreferrer">Releases</a>
+              <a class="button button-secondary" href="https://emp0ry.com">Back to Hub</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand brand-footer" href="#top">
+            <span class="brand-copy">
+              <strong>AutoHide Cursor</strong>
+            </span>
+          </a>
+          <p class="footer-copy">
+            A lightweight Windows tray app that hides the mouse cursor after inactivity. No admin required.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <a href="https://emp0ry.com">Hub</a>
+          <a href="https://github.com/emp0ry/AutoHideCursor" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://github.com/emp0ry/AutoHideCursor/releases" target="_blank" rel="noreferrer">Releases</a>
+        </div>
+
+        <div class="footer-credits">
+          <p>Built and published by emp0ry.</p>
+          <p>MIT licensed.</p>
+          <p>&copy; <span data-year></span> AutoHide Cursor</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
