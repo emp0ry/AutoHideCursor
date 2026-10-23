@@ -1,0 +1,9 @@
+{
+  "name": "AutoHide Cursor",
+  "url": "http://127.0.0.1:4178/",
+  "main_status": 200,
+  "managed_assets_checked": 14,
+  "no_missing_assets": true,
+  "module_mime_types_valid": true,
+  "browser_tested": false
+}
