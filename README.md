@@ -23,7 +23,7 @@
 - Uses standard Windows APIs (low-level mouse hook + system cursor swap)
 
 ## 📸 Screenshots
-| ![Tray](docs/screenshots/tray.png) | ![Menu](docs/screenshots/menu.png) | ![About](docs/screenshots/about.png) |
+| ![Tray](https://hidecursor.emp0ry.com/screenshots/tray.png) | ![Menu](https://hidecursor.emp0ry.com/screenshots/menu.png) | ![About](https://hidecursor.emp0ry.com/screenshots/about.png) |
 |---|---|---|
 
 ## ⬇️ Install & Run
@@ -66,3 +66,7 @@ If you find this app useful:
 
 ## 📄 License
 MIT License. See [LICENSE](LICENSE.txt) for details.
+
+## Website
+
+The [product website](https://hidecursor.emp0ry.com/) is also available at [emp0ry.com/AutoHideCursor/](https://emp0ry.com/AutoHideCursor/). Website sources and publication are maintained in the private emp0ry.com project. Completed application releases notify its central static build; this repository contains the application and its technical documentation.
